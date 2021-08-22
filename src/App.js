@@ -1,18 +1,14 @@
-import React from "react";
-import Education from "./components/Education";
-import References from "./components/References";
-import Experience from "./components/Experience";
+import React from 'react';
+import styles from './App.css';
+import Sidebar from './components/Sidebar/';
+import {BrowserRouter as Router} from 'react-router-dom';
 
-
-function App() {
+export default function App() {
   return (
-    <div>
-      <h1>welcome friends</h1>
-      <Education />
-      <References />
-      <Experience />
-    </div>
+    <React.Fragment>
+      <Router>
+          <Sidebar />
+      </Router>
+    </React.Fragment>
   );
 }
-
-export default App;
